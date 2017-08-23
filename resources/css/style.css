@@ -8,7 +8,7 @@ body {
   width: 100%;
   position: relative;
   z-index: 2;
-  margin-top: 0px;
+  margin: 0px;
 
 }
 
@@ -18,17 +18,18 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 69px;
-  border-bottom: 1px solid seashell;
+  border: 1px solid white;
+  /*border-bottom: 1px solid seashell;*/
   padding: 0px 10px;
   position: fixed;
   width: 100%;
   z-index: 5;
   margin-top: 0px;
-
 }
 
 #logo {
   height: 50px;
+  width: auto;
 }
 
 nav {
@@ -38,6 +39,7 @@ nav {
 span {
   display: inline-block;
   padding: 10px;
+  margin-right: 10px;
 }
 
 a {
@@ -45,6 +47,98 @@ a {
 }
 
 #content {
+  padding-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.first
+{
+  height: 700px;
+  width: 1200px;
+  background-color: dimgray;
+  display: flex;
+  background-image: url("../../resources/images/img-mission-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+
+}
+.mission {
+  background-color: black;
+  height: 150px;
+  width: 1200px;
+}
+
+.second {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+  justify-content: center;
+  align-items: center;
+  border: white solid;
+  margin: auto;
+}
+
+.second h2 {
   margin-top: 70px;
-  position: relative;
+}
+
+img {
+  height: 200px;
+  width: 300px;
+  margin: 10px 15px;
+}
+
+.question {
+  justify-content: center;
+  width: 100%;
+  margin: 20px auto;
+  border: white solid;
+}
+
+.third {
+  width: 1200px;
+  height: 500px;
+  display: flex;
+  background-color: dimgray;
+  background-image: url("../../resources/images/img-locations-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.third h2 {
+  display: inline-block;
+  width: 100%;
+  border: white solid;
+}
+
+.location {
+  background-color: black;
+  width: 300px;
+  min-height: 300px;
+  margin: 0px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+margin: 0px;
+padding: 0px;
+}
+
+.third h2 {
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+
+.third h3 {
+  padding: 0px;
+  margin: 0px;
 }
