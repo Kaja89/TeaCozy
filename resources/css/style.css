@@ -86,7 +86,7 @@ a {
 img {
   height: 200px;
   width: 300px;
-  margin: 10px 15px;
+  margin: 0px 15px 10px 15px;
 }
 
 .description {
@@ -95,9 +95,18 @@ img {
 }
 
 .question {
+  display: flex;
   justify-content: center;
   width: 100%;
-  margin: 20px auto;
+  margin: 70px auto 15px auto;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.question h2, .question h4 {
+  display: block;
+  margin: 10px auto;
 }
 
 .third {
@@ -111,6 +120,7 @@ img {
   align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 .third h2 {
@@ -130,7 +140,7 @@ img {
   flex-direction: column;
   justify-content: space-around;
   opacity: 1;
-  margin-bottom: 40px;
+  padding: 10px 0px;
 }
 
 p {
@@ -155,6 +165,21 @@ footer {
   width: 100%;
 }
 
+.end {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  margin-top: 10px;
+}
+.end h5, .end h2 {
+  margin: 0px;
+}
+
+
+
 .copy {
   display: flex;
   width: 100%;
@@ -163,8 +188,4 @@ footer {
 
 .copy h5 {
   margin-left: 20px;
-}
-
-.end {
-  height: 200px;
 }
