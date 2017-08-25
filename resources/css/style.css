@@ -14,7 +14,6 @@ body {
 
 header {
   background-color: black;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   height: 69px;
@@ -26,13 +25,14 @@ header {
   margin-top: 0px;
 }
 
+.flex {
+  display: flex;
+}
+
 #logo {
   height: 50px;
   width: auto;
-}
-
-nav {
-  display: flex;
+  padding-top: 10px;
 }
 
 span {
@@ -47,20 +47,14 @@ a {
 
 #content {
   padding-top: 70px;
-  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .first
 {
   height: 700px;
   width: 1200px;
-  background-color: dimgray;
-  display: flex;
   background-image: url("../../resources/images/img-mission-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   align-items: center;
 
 }
@@ -71,10 +65,8 @@ a {
 }
 
 .second {
-  display: flex;
   flex-wrap: wrap;
   width: 1000px;
-  justify-content: center;
   align-items: center;
   margin-bottom: 50px;
 }
@@ -95,13 +87,10 @@ img {
 }
 
 .question {
-  display: flex;
-  justify-content: center;
   width: 100%;
   margin: 70px auto 15px auto;
   align-items: center;
   align-content: center;
-  flex-direction: column;
 }
 
 .question h2, .question h4 {
@@ -112,13 +101,8 @@ img {
 .third {
   width: 1200px;
   height: 500px;
-  display: flex;
-  background-color: dimgray;
   background-image: url("../../resources/images/img-locations-background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   align-items: flex-start;
-  justify-content: center;
   flex-wrap: wrap;
   align-content: flex-start;
 }
@@ -136,16 +120,14 @@ img {
   margin-top: 0px;
   margin-left: 20px;
   margin-right: 20px;
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
   opacity: 1;
   padding: 10px 0px;
 }
 
 p {
-margin: 0px;
-padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .location h2 {
@@ -159,15 +141,11 @@ padding: 0px;
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   width: 100%;
 }
 
 .end {
-  display: flex;
-  flex-direction: column;
   flex-grow: 0;
   justify-content: space-between;
   align-items: center;
@@ -178,14 +156,25 @@ footer {
   margin: 0px;
 }
 
-
-
 .copy {
-  display: flex;
   width: 100%;
   justify-content: flex-start;
 }
 
 .copy h5 {
   margin-left: 20px;
+}
+
+#content, .second, .question, .third {
+  justify-content: center;
+}
+
+.question, .location, footer, .end {
+  flex-direction: column;
+}
+
+.first, .third {
+  background-color: dimgray;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
